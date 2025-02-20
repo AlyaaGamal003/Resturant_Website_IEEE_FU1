@@ -4,13 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    
     <title>La Viva La Vida</title>
 </head>
 
 <body>
+
     <header>
         <div class="nav">
             <div class="nav_child1">
@@ -36,7 +39,7 @@
     </header>
     <section class="home" id="home">
         <div class="container2">
-            <center class="img_text">
+            <div class="img_text center">
                 <h1>Welcome to La Viva La Vida A Culinary Experience Like No Other!</h1>
                 <p>
                     At La Viva La Vida, we believe that every meal should be an unforgettable experience. Nestled in the
@@ -50,17 +53,17 @@
                     Join us at La Viva La Vida, where great food, exceptional service, and a cozy atmosphere come
                     together to create memories that last a lifetime.
                 </p>
-            </center>
+            </div>
 
         </div>
     </section>
 
     <section class="container mx-auto px-4 py-10 menu" id="menu">
-        <center class="menu_txt">
+        <div class="menu_txt center">
             <h1>Our Menu</h1>
-        </center>
+        </div>
         <div class="grid md:grid-cols-3 gap-6">
-           
+
             <div class="swiper-slide sliderelative group overflow-hidden rounded-lg">
                 <img src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/30a4f764097501.5ac6982d3b22f.png"
                     alt="Olivia Garcia"
@@ -137,15 +140,15 @@
                         delectus dolore accusamus corrupti dolores nisi explicabo laboriosam ipsum itaque tempore
                         soluta, quaerat sequi! Quos, earum nulla?</p>
                 </div>
-                <div class="bg-black text-white text-center py-3 font-bold">Mas</div>
+                <div class="bg-black text-white text-center py-3 font-bold">Mashrom</div>
             </div>
         </div>
     </section>
 
     <section class="Specials" id="Specials">
-        <center class="specials_txt">
+        <div class="specials_txt center">
             <h1>Our Specials</h1>
-        </center>
+        </div>
         <div>
             <div class="dev_cont">
                 <div class="txt">
@@ -186,6 +189,29 @@
         </div>
     </section>
     <section class="Order" id="Order">
+        <div class="center">
+            <div class="specials_txt center">
+                <h1>Order Now</h1>
+            </div>
+            <form action="#" class="form">
+                <label for="FName">Name:</label><br>
+                <input type="text" id="FName" name="FName" value="Your Name" style="color: black;"><br><br>
+                <label for="location">Location:</label><br>
+                <input type="text" id="location" name="location" value=" Your location" style="color: black;"><br><br>
+                <span>select Your Order</span><br>
+                <select name="couses" class="box" required>
+                    <option value="disabled selected" >select Your Order</option>
+                    <option value="Omlit">Omlit</option>
+                    <option value="Spagiti">Spagiti</option>
+                    <option value="Steak">Steak</option>
+                    <option value="Sea_Food">Sea Food</option>
+                    <option value="Mashrom">Mashrom</option>
+                    <option value="Salmon">Salmon</option>
+                </select><br>
+                <input type="submit" class="btn" value="Submit">
+                <br><br>
+            </form>
+        </div>
 
     </section>
 
